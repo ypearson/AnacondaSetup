@@ -1,7 +1,5 @@
-name: py36
-channels:
-    - https://conda.anaconda.org/menpo
-    - conda-forge
+name: python36
+
 dependencies:
     - python==3.6
     - numpy

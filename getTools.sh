@@ -9,4 +9,4 @@ fi
 
 $HOME/${ANACONDA}/bin/conda env create -f environment.yml
 
-echo -e "Run this:  . ~/anaconda3/bin/activate py36  \n"
+echo -e "Run this:  . ~/anaconda3/bin/activate python36  \n"
