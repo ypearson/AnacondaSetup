@@ -1,4 +1,4 @@
-VER=5.0.1
+VER=5.1.0
 ANACONDA=anaconda3
 INSTALLER=Anaconda3-${VER}-Linux-x86_64.sh
 ANACONDA_LINK=http://repo.continuum.io/archive/${INSTALLER}
