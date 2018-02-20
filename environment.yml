@@ -1,11 +1,9 @@
-name: python36
-
+name: p36opencv
+channels:
+ - conda-forge
+ - defaults
 dependencies:
-    - python==3.6
-    - numpy
-    - matplotlib
-    - jupyter
-    - scikit-learn
-    - scipy
-    - seaborn
-    - pandas
+ - python==3.6
+ - opencv
+ - numpy
+ - matplotlib
