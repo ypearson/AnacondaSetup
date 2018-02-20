@@ -3,10 +3,16 @@ ANACONDA=anaconda3
 INSTALLER=Anaconda3-${VER}-Linux-x86_64.sh
 ANACONDA_LINK=http://repo.continuum.io/archive/${INSTALLER}
 
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install -y qt5-default libqt5opengl5-dev libgtk-3-dev libgtkglext1 \
+libgtkglext1-dev libpng3 pngtools libpng12-dev libpng12-0 libpng++-dev libtiff5-dev \
+libtiff5 libtiff-tools libjpeg8-dev libjpeg8 libjpeg8-dbg libjasper-dev libjasper-runtime
+
 if [ ! -d $HOME/${ANACONDA} ]; then
     wget ${ANACONDA_LINK} && chmod +x ${INSTALLER} && ./${INSTALLER} -b -p $HOME/$ANACONDA
 fi
 
 $HOME/${ANACONDA}/bin/conda env create -f environment.yml
 
-echo -e "Run this:  . ~/anaconda3/bin/activate python36  \n"
+echo -e ". ~/anaconda3/bin/activate p36opencv \n"
