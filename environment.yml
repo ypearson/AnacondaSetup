@@ -1,9 +1,9 @@
-name: p36opencv
+name: opencv_env
 channels:
  - conda-forge
  - defaults
 dependencies:
- - python==3.6
+ - python
  - opencv
  - numpy
  - matplotlib

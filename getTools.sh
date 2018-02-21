@@ -1,6 +1,18 @@
-VER=5.1.0
-ANACONDA=anaconda3
-INSTALLER=Anaconda3-${VER}-Linux-x86_64.sh
+#!/usr/bin/env bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Input python version, v2 or v3"
+  exit 1
+fi
+
+if [[ $1 -ne 2 && $1 -ne 3 ]]; then
+    echo "Choose 2 or 3"
+    exit 1
+fi
+
+ANA_VER=5.1.0
+ANACONDA=anaconda
+INSTALLER=Anaconda${1}-${ANA_VER}-Linux-x86_64.sh
 ANACONDA_LINK=http://repo.continuum.io/archive/${INSTALLER}
 
 sudo apt-get update
@@ -15,4 +27,4 @@ fi
 
 $HOME/${ANACONDA}/bin/conda env create -f environment.yml
 
-echo -e ". ~/anaconda3/bin/activate p36opencv \n"
+echo ". ~/anaconda/bin/activate opencv_env"
