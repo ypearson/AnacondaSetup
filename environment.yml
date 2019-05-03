@@ -3,7 +3,9 @@ channels:
  - conda-forge
  - defaults
 dependencies:
- - python=3.6
+ - python
+ - gtk            # for opencv
+ - ffmpeg          # for opencv
  - opencv
  - numpy
  - scipy

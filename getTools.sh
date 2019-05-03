@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-ANA_VER=5.1.0
+ANA_VER=2019.03
 ANACONDA=anaconda
 INSTALLER=Anaconda3-${ANA_VER}-Linux-x86_64.sh
-ANACONDA_LINK=http://repo.continuum.io/archive/${INSTALLER}
+ANACONDA_LINK=https://repo.anaconda.com/archive/${INSTALLER}
 ENV_FILE=environment.yml
 
 sudo apt-get update
