@@ -1,11 +1,12 @@
 name: opencv_env
 channels:
+ - loopbio
  - conda-forge
  - defaults
 dependencies:
  - python
- - gtk            # for opencv
- - ffmpeg          # for opencv
+ - gtk2
+ - ffmpeg
  - opencv
  - numpy
  - scipy
